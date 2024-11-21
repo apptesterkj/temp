@@ -4,7 +4,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(host, "*.googlevideo.com") ||
         shExpMatch(host, "www.google.com") ||
         shExpMatch(host, "*.googleusercontent.com")) {
-        return "PROXY 127.0.0.1";
+        return "PROXY 127.0.0.1:8808";
     }
 
     // Allow all other traffic to go through directly
